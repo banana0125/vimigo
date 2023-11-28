@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "60978b25-cc8e-47a4-a0eb-af5b1c85d697",
+		"name": "Vimigo Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31421776"
+	},
+	"item": [
+		{
+			"name": "GET all request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "GET by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/students/2"
+			},
+			"response": []
+		},
+		{
+			"name": "POST request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test3address",
+							"type": "text"
+						},
+						{
+							"key": "study_course",
+							"value": "test3study_course",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/students/1"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "test3address",
+							"type": "text"
+						},
+						{
+							"key": "study_course",
+							"value": "test3study_course",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/students/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/students/search?query=test2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"students",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "test2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
